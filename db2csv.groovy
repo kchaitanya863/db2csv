@@ -78,6 +78,9 @@ import groovy.sql.Sql
 //CSV Delimiter
 @Option(names = ["-del", "--delimiter"], description = "CSV delimiter.")
 @Field char delimiter = ","
+//PostgreSQL Schema
+@Option(names = ["-schema"], description = "PostgreSQL Schema.")
+@Field String schema = "public"
 //help
 @Option(names = ["-?", "--help"], usageHelp = true, description = "Show this help message and exit.")
 @Field boolean helpRequested
@@ -99,7 +102,7 @@ switch (client.toLowerCase()){
         DB_DRIVER = "org.postgresql.Driver"
         defaultEscapeCharacter = "\""
         DB_URL = "jdbc:postgresql://$hostname:$port/$database?user=$username&password=$password&sslmode=${ssl?"require":"disable"}"
-        database = 'public' //changing this would effect schema
+        database = schema //changing this would effect schema
 }
 /**
     * get Sql instance with given connection configuration
