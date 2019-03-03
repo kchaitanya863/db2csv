@@ -3,6 +3,9 @@
 ### Install Groovy first
 `sudo apt-get install groovy`
 
+## Run this script without cloning 
+`groovy https://raw.githubusercontent.com/kchaitanya863/db2csv/master/db2csv.groovy`
+
 ## Download single table in the database
 `groovy db2csv.groovy -h <db_hostname> -u <username> -p <password> -d database_name -t table_name`
 
