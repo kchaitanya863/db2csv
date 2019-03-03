@@ -31,7 +31,7 @@ import groovy.sql.Sql
 // @Parameters(arity = "1", paramLabel = "FILE", description= "The file(s) whose checksum to calculate.")
 // @Field File[] files
 //client
-@Option(names = ["-client"], description = "select client MySQL or PostgreSQL")
+@Option(names = ["--client"], description = "select client MySQL or PostgreSQL")
 @Field String client = "MySQL"
 //all tables
 @Option(names = ["-a", "--all"], description = "download all tables in the database")
@@ -76,10 +76,10 @@ import groovy.sql.Sql
 @Option(names = ["--escape"], description = "CSV Quote Character.")
 @Field char csvEscapeCharacter = "\""
 //CSV Delimiter
-@Option(names = ["-del", "--delimiter"], description = "CSV delimiter.")
+@Option(names = ["--delimiter"], description = "CSV delimiter.")
 @Field char delimiter = ","
 //PostgreSQL Schema
-@Option(names = ["-schema"], description = "PostgreSQL Schema.")
+@Option(names = ["--schema"], description = "PostgreSQL Schema.")
 @Field String schema = "public"
 //help
 @Option(names = ["-?", "--help"], usageHelp = true, description = "Show this help message and exit.")
