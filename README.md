@@ -1,5 +1,18 @@
 # db2csv
 
+Convert your MySQL / PostgreSQL tables/queries to csv.
+Options include:
+- setting resultset fetch size(number of records to fetch from db in a single network call)
+- setting CSV Delimiter
+- setting CSV Quote character
+- supports SSL connection
+- dump all tables in a database
+- dump all in a PostgreSQL schema
+
+Need Contributers for:
+- compiling it to an executable with GraalVM
+- adding more database providers
+
 ### Install Groovy first
 `sudo apt-get install groovy`
 
@@ -20,7 +33,7 @@
       _ _    ___                
      | | |  |__ \               
    __| | |__   ) |_________   __
-  / _\` | '_ \ / // __/__\ \ / /
+  / _| | '_ \ / // __/__\ \ / /
  | (_| | |_) / /| (__\__ \\ V / 
   \__,_|_.__/____\___|___/ \_/  
                                 
