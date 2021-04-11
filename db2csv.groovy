@@ -16,7 +16,7 @@
 
         description = "Get Database tables as csv",
         version = 'db2csv v1.0.0', showDefaultValues = true,
-        footerHeading = "%nFor more details, see:%n",
+        footerHeading = "%n============================%n",
         footer = ["Developed by @kchaitanya863",
                 "ASCII Art thanks to http://patorjk.com/software/taag/"]
 )

@@ -77,7 +77,7 @@ Get Database tables as csv
   -u, --user=<username>   username of the database server.
   -v, --verbose           Print more info on execution
 
-For more details, see:
+============================
 Developed by @kchaitanya863
 ASCII Art thanks to http://patorjk.com/software/taag/
 
